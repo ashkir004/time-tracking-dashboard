@@ -1,0 +1,115 @@
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* COLORS */
+    --white: #ffffff;
+    --black: #000000;
+    --navy-950: #0E1323;
+    --navy-900: #1C204B;
+    --navy-800: #33397A;
+    --navy-200: #BBC0FF;
+    --orange: #FF8B64;
+    --purple-700: #7335D2;
+    --purple-600: #5747EA;
+    --purple-500: #7078C9;
+    --blue-300: #55C2E6;
+    --pink-400: #FF5E7D;
+    --green-400: #4BCF82;
+    --yellow-300: #F1C75B;
+    --grey-200: #D8D8D8; 
+
+    /* FONT SIZE */
+    --font-xs: calc(15 / 16 * 1rem);
+    --font-sm: calc(18 / 16 * 1rem);
+    --font-md: calc(21 / 16 * 1rem);
+    --font-lg: calc(24 / 16 * 1rem);
+    --font-xl: calc(32 / 16 * 1rem);
+    --font-xxl: calc(40 / 16 * 1rem);
+    --font-xxxl: calc(56 / 16 * 1rem);
+
+    /* SPACING */
+    --spacing-0: 0;
+    --spacing-100: calc(8 / 16 * 1rem);
+    --spacing-200: calc(16 / 16 * 1rem);
+    --spacing-300: calc(24 / 16 * 1rem);
+    --spacing-400: calc(32 / 16 * 1rem);
+    --spacing-500: calc(40 / 16 * 1rem);
+
+}
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url('./assets/fonts/Rubik-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('./assets/fonts/Rubik-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik Medium';
+    src: url('./assets/fonts/Rubik-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.text-1 {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: var(--font-xxxl);
+    line-height: calc(66 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-2 {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: var(--font-xxl);
+    line-height: calc(47 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-3 {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: var(--font-xl);
+    line-height: calc(38 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-4 {
+    font-family: 'Rubik Light', Arial, Helvetica, sans-serif;
+    font-size: var(--font-lg);
+    line-height: calc(28 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-5-md {
+    font-family: 'Rubik Medium', Arial, Helvetica, sans-serif;
+    font-size: var(--font-sm);
+    line-height: calc(21 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-5-regular {
+    font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
+    font-size: var(--font-sm);
+    line-height: calc(21 / 16 * 1rem);
+    letter-spacing: 0;
+}
+
+.text-6 {
+    font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
+    font-size: var(--font-xs);
+    line-height: calc(18 / 16 * 1rem);
+    letter-spacing: 0;
+}
