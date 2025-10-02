@@ -198,10 +198,17 @@ body {
     font-size: var(--font-sm);
     line-height: calc(21 / 16 * 1rem);
     letter-spacing: 0;
+    cursor: pointer;
 }
 
 .timeframes .timeframe:active {
     color: var(--white);
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
 }
 
 .activity-card {
