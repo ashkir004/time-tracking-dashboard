@@ -201,7 +201,7 @@ body {
     cursor: pointer;
 }
 
-.timeframes .timeframe:active {
+.timeframes [data-active="true"] {
     color: var(--white);
 }
 
