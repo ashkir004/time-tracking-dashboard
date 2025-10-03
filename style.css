@@ -154,6 +154,10 @@ body {
     list-style: none;
 }
 
+.timeframes li {
+    list-style: none;
+}
+
 .timeframes .timeframe {
     color: var(--purple-500);
     font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
