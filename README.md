@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [time-tracking-dashboard (github)](https://github.com/ashkir004/time-tracking-dashboard)
+- Live Site URL: [time-tracking-dashboard (netlify)](https://ashkir004-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
