@@ -1,6 +1,7 @@
 
 let activities = document.querySelector('.activities');
-let timeframeOptions = document.querySelectorAll('.timeframe');
+let dashboardHeader = document.querySelector('.dashboard-header');
+let timeframeOptions = dashboardHeader.querySelectorAll('.timeframe');
 
 let activeTimeframe = 'weekly';
 let previousLabel = 'Last Week';
@@ -29,6 +30,7 @@ function updateUI(data, selectedTimeframe = 'weekly', previousLabel = 'Last Week
         }
     });
 
+    dashboardHeader.classList.add('hidden');
     activities.innerHTML = '';
 
     for (const item of data) {
@@ -53,6 +55,8 @@ function appendItem(item, selectedTimeframe = 'weekly', previousLabel = 'Last We
           </div>
         </div>
       </div>`;
+
+      dashboardHeader.classList.remove('hidden');
 }
 
 timeframeOptions.forEach((option) => {
