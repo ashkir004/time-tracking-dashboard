@@ -30,7 +30,6 @@ function updateUI(data, selectedTimeframe = 'weekly', previousLabel = 'Last Week
         }
     });
 
-    dashboardHeader.classList.add('hidden');
     activities.innerHTML = '';
 
     for (const item of data) {
