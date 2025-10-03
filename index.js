@@ -3,6 +3,7 @@ let activities = document.querySelector('.activities');
 let timeframeOptions = document.querySelectorAll('.timeframe');
 
 let activeTimeframe = 'weekly';
+let previousLabel = 'Last Week';
 
 let data = '';
 
@@ -17,11 +18,12 @@ fetch('/data.json').then((response) => {
 });
 
 
-function updateUI(data, selectedTimeframe = 'weekly') {
+function updateUI(data, selectedTimeframe = 'weekly', previousLabel = 'Last Week') {
 
     timeframeOptions.forEach((option) => {
         if (option.dataset.timeframe === activeTimeframe) {
             option.dataset.active = true;
+            previousLabel = option.dataset.previous
         } else {
             option.dataset.active = false;
         }
@@ -30,11 +32,11 @@ function updateUI(data, selectedTimeframe = 'weekly') {
     activities.innerHTML = '';
 
     for (const item of data) {
-        appendItem(item, selectedTimeframe);
+        appendItem(item, selectedTimeframe, previousLabel);
     }
 }
 
-function appendItem(item, selectedTimeframe = 'weekly') {
+function appendItem(item, selectedTimeframe = 'weekly', previousLabel = 'Last Week') {
     let title = item.title.toLowerCase().replace(' ', '-');
     let timeframe = item.timeframes[selectedTimeframe];
 
@@ -47,7 +49,7 @@ function appendItem(item, selectedTimeframe = 'weekly') {
           </div>
           <div class="activity-stat">
             <p class="current-time">${timeframe.current}hrs</p>
-            <p class="previous-time metadata">Previous - ${timeframe.previous} hrs</p>
+            <p class="previous-time metadata">${previousLabel} - ${timeframe.previous} hrs</p>
           </div>
         </div>
       </div>`;
