@@ -216,6 +216,11 @@ body {
     border-radius: var(--radii-15);
 }
 
+.activity:hover {
+    cursor: pointer;
+    background-color: var(--navy-800);
+}
+
 .activity-header {
     display: flex;
     flex-direction: row;
