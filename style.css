@@ -165,6 +165,7 @@ body {
     line-height: calc(21 / 16 * 1rem);
     letter-spacing: 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .timeframes [data-active="true"] {
@@ -294,7 +295,7 @@ body {
     .activity {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-200);
+        gap: var(--spacing-300);
         width: 10rem;
     }
 
@@ -351,7 +352,7 @@ body {
     .dashboard-header .timeframes {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-200);
+        gap: calc(21 / 16 * 1rem);
         padding-inline: var(--spacing-400);
         align-self: flex-start;
     }
