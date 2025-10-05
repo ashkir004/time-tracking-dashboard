@@ -61,7 +61,7 @@ function appendItem(item, selectedTimeframe = 'weekly', previousLabel = 'Last We
 timeframeOptions.forEach((option) => {
 
     option.addEventListener('click', (e) => {
-        el = e.target;
+        let el = e.target;
         updateSelectedTimeframe(el.dataset.timeframe);
     })
 })
